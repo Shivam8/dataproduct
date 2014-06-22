@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Dataproduct : " />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Dataproduct</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/Shivam8/dataproduct">View on GitHub</a>
+
+          <h1 id="project_title">Dataproduct</h1>
+          <h2 id="project_tagline"></h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/Shivam8/dataproduct/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/Shivam8/dataproduct/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <hr><p>title       : Linear Regression to Predict Trade Value
+subtitle    : Slidify 
+author      : Shivam Rai
+job         : 
+framework   : io2012       #{io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : [mathjax]            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}</p>
+
+<h2>
+<a name="knit---------slidifyknit2slides" class="anchor" href="#knit---------slidifyknit2slides"><span class="octicon octicon-link"></span></a>knit        : slidify::knit2slides</h2>
+
+<h2>
+<a name="introduction" class="anchor" href="#introduction"><span class="octicon octicon-link"></span></a>Introduction</h2>
+
+<p>This exercise uses linear regression in R to predict value of equity trade for a day for a given volume of trade .</p>
+
+<p>Data has been collected from National Stock Exchange , India.</p>
+
+<hr><h2>
+<a name="model" class="anchor" href="#model"><span class="octicon octicon-link"></span></a>Model</h2>
+
+<p>Linear Regression has been used to predict the value since the both Value and Volume are increasing in time.</p>
+
+<p>Used bootstrap to calculate parameters of regression.</p>
+
+<p>These parameters have been hardcoded due to coding issues with real time calculation.</p>
+
+<hr><h2>
+<a name="calculation" class="anchor" href="#calculation"><span class="octicon octicon-link"></span></a>Calculation</h2>
+
+<p>The trade value is calculated as :</p>
+
+<p>**Where input$integer = 250000 (volume of trade)</p>
+
+<div class="highlight highlight-r"><pre>
+<span class="kn">require</span><span class="p">(</span>bootstrap<span class="p">)</span>
+ <span class="kt">c</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="m">2500000</span><span class="p">)</span><span class="o">%*%</span><span class="kt">c</span><span class="p">(</span><span class="m">-21.5</span><span class="p">,</span><span class="m">0.00181</span><span class="p">)</span>
+
+</pre></div>
+
+<hr><h2>
+<a name="wrap-up" class="anchor" href="#wrap-up"><span class="octicon octicon-link"></span></a>Wrap up</h2>
+
+<ol>
+<li><p>.Rdata file has been tried with the code for summary table and observations.</p></li>
+<li><p>Going forward , Caret package will be tried to make prediction for multi features.</p></li>
+<li><p>This application works on hard coded values.</p></li>
+</ol><p>Thank you!!</p>
+
+<hr>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Dataproduct maintained by <a href="https://github.com/Shivam8">Shivam8</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
